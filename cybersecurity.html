@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Services</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+
+    .service-hero {
+      background: #f3f0fa;
+      padding: 5px 20px;
+      text-align: center;
+    }
+
+    .service-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .service-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .service-content h2, h3 {
+      color: #6a0dad;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background: #2c1c4d;
+      color: white;
+      /* margin-top: 10px; */
+    }
+
+    .section-title {
+      color: #6a0dad;
+      margin-top: 30px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .section-content {
+      margin-top: 15px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <main>
+    <section class="service-hero">
+      <h1 >Cybersecurity Services</h1>
+      <p>Safeguard your digital infrastructure with trusted cybersecurity solutions.</p>
+    </section>
+
+    <section class="service-content">
+      <img src="image logo/cybersecurity serve.jpg" alt="Cybersecurity services illustration showing protection shield and digital security" />
+
+      <h2 style="text-align: left;">What is Cybersecurity?</h2>
+      <p>
+        Cybersecurity encompasses the technologies, processes, and practices designed to protect computer systems, networks, devices, and data from unauthorized access, damage, theft, or disruption.
+        As threats grow more sophisticated, a robust cybersecurity strategy is critical to protect your digital assets.
+      </p>
+
+      <h2 class="section-title" style="text-align: left;">Key Cybersecurity Services</h2>
+      <div class="section-content">
+        <ul>
+          <li><strong>Vulnerability Assessments:</strong> Identifying weaknesses in systems and applications.</li>
+          <li><strong>Penetration Testing:</strong> Simulating cyberattacks to evaluate defenses.</li>
+          <li><strong>Managed Security Services:</strong> Outsourced monitoring and threat detection.</li>
+          <li><strong>Incident Response:</strong> Rapid containment and recovery from security breaches.</li>
+          <li><strong>Security Awareness Training:</strong> Educating employees on threat recognition and prevention.</li>
+          <li><strong>Compliance Management:</strong> Ensuring alignment with legal and industry standards.</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title" style="text-align: left;">Why Cybersecurity Matters</h2>
+      <div class="section-content">
+        <p>
+          In today's digital landscape, cybersecurity is not an option—it's a necessity. From ransomware to data breaches, every organization faces risk. Cybersecurity protects your operations, reputation, and customer trust.
+        </p>
+      </div>
+
+      <h2 class="section-title" style="text-align: left;">Services We Provide</h2>
+      <div class="section-content">
+        <ul>
+          <li><strong>Risk Assessment:</strong> Identify and mitigate potential threats.</li>
+          <li><strong>Network Security:</strong> Secure your network infrastructure against intrusions.</li>
+          <li><strong>Operational Security:</strong> Maintain control over data flow and access.</li>
+          <li><strong>Application Security:</strong> Secure apps against vulnerabilities and threats.</li>
+          <li><strong>Disaster Recovery & Business Continuity:</strong> Ensure operations resume quickly after incidents.</li>
+          <li><strong>End-User Education:</strong> Train staff to recognize and respond to cyber threats.</li>
+        </ul>
+      </div>
+
+      <p><strong>Secure your organization’s future by partnering with Zaltix Soft Solutions — your trusted cybersecurity experts.</strong></p>
+      <p>Contact us today to schedule a security consultation.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zaltix Soft Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+     fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI & Machine Learning Services</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    
+   
+
+    /* Main content */
+    .service-hero {
+      background: #f3f0fa;
+      padding: 5px 20px;
+      text-align: center;
+    }
+
+    .service-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .service-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .service-content h2, h3 {
+      color: #6a0dad;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background: #2c1c4d;
+      color: white;
+      /* margin-top: 40px; */
+    }
+
+    .section-title {
+      color: #6a0dad;
+      margin-top: 30px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .section-content {
+      margin-top: 15px;
+    }
+
+ 
+      </style>
+</head>
+<body>
+  <!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <main>
+    <section class="service-hero">
+      <h1>Artificial Intelligence & Machine Learning Services</h1>
+      <p>Unlock the power of AI to drive smarter decisions and transform your business.</p>
+    </section>
+
+    <section class="service-content">
+      <img src="image logo/aiml serve.jpg" alt="AI & Machine Learning Image" />
+
+      <h2 style="text-align: left;">What is Artificial Intelligence (AI)?</h2>
+      <p>
+        Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and act like humans. These machines can learn from data, identify patterns, and make decisions with minimal human intervention. AI encompasses a broad range of technologies and techniques, including machine learning, natural language processing, computer vision, and robotics.
+      </p>
+
+      <h2 style="text-align: left;">What is Machine Learning (ML)?</h2>
+      <p>
+        Machine Learning (ML) is a subset of AI that focuses on enabling machines to learn from data without being explicitly programmed. ML algorithms are trained on large datasets, allowing them to identify patterns, make predictions, and improve their performance over time. Key types of machine learning include supervised learning, unsupervised learning, and reinforcement learning.
+      </p>
+
+      <h3 style="text-align: left;">Supervised Learning</h3>
+      <p>
+        Supervised Learning uses labeled data to train algorithms to classify data or predict outcomes accurately. Common algorithms include linear regression, support vector machines, and decision trees.
+      </p>
+
+      <h3 style="text-align: left;">Unsupervised Learning</h3>
+      <p>
+        Unsupervised Learning involves training algorithms on unlabeled data to identify patterns and relationships. Common techniques include clustering, dimensionality reduction, and association rule mining.
+      </p>
+
+      <h2 class="section-title" style="text-align: left;">AI & Machine Learning Services</h2>
+      <div class="section-content">
+        <p>AI and ML technologies provide a wide range of services across various industries. Here are a few key areas where these technologies are making a significant impact:</p>
+        <ul>
+          <li><strong>Predictive Analytics:</strong> Analyze historical data to predict future trends, useful in fields like finance and healthcare.</li>
+          <li><strong>Natural Language Processing (NLP):</strong> Enables computers to understand human language, powering voice assistants, chatbots, and translation apps.</li>
+          <li><strong>Image Recognition:</strong> AI/ML can identify and categorize images, aiding healthcare diagnosis, security systems, and social media platforms.</li>
+          <li><strong>Personalized Recommendations:</strong> Analyze user behavior to provide tailored suggestions for e-commerce or entertainment platforms.</li>
+          <li><strong>Fraud Detection:</strong> Identifying fraudulent activities by analyzing patterns and anomalies, especially in finance and banking.</li>
+          <li><strong>Customer Service:</strong> AI-powered chatbots can handle routine customer queries, allowing human agents to tackle more complex issues.</li>
+          <li><strong>Process Automation:</strong> Automate repetitive tasks to enhance efficiency and allow employees to focus on high-value work.</li>
+          <li><strong>Sentiment Analysis:</strong> Analyze text to understand sentiments for social media monitoring and brand reputation management.</li>
+          <li><strong>Speech Recognition:</strong> Convert spoken language into text, useful in transcription, voice assistants, and more.</li>
+          <li><strong>Autonomous Vehicles:</strong> AI/ML play a critical role in developing self-driving cars, drones, and other autonomous systems.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zaltix Soft Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+     fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

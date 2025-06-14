@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Zaltix</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #2c1c4d;
+      color: #fff;
+    }
+
+
+    .blog-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .blog-post {
+      background-color: #fff;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-left: 6px solid #007BFF;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+      color: black;
+    }
+
+    .blog-post:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .blog-post h2 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+
+    .blog-post img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .extra-content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .toggle-btn {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .toggle-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <div class="blog-container">
+
+    <div class="blog-post">
+      <video autoplay muted loop playsinline style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px;">
+        <source src="videos/DM.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2>The Power of Digital Marketing in 2025</h2>
+      <p>
+        Digital marketing has evolved into a powerhouse for businesses of all sizes. With the rise of AI, automation, and personalized content...
+      </p>
+      <div class="extra-content">
+        <p>
+          Brands are reaching audiences like never before. In 2025, it's all about data-driven campaigns, interactive ads, voice search optimization, and strong social media presence.
+        </p>
+        <p>
+          Whether it's SEO, Google Ads, or influencer partnerships, digital marketing offers endless opportunities to grow brand visibility and drive sales. Companies that invest in smart strategies and performance tracking are staying ahead of the competition.
+        </p>
+        <p>
+          Email marketing automation and segmentation have become more refined, offering businesses a direct path to personalized customer journeys. AI tools now generate campaign assets, analyze data, and even optimize content on the fly.
+        </p>
+        <p>
+          Augmented Reality (AR) is also revolutionizing digital marketing, offering immersive experiences that boost engagement and conversion rates.
+        </p>
+      </div>
+      <span class="toggle-btn">Read More →</span>
+    </div>
+
+    <div class="blog-post">
+      <video autoplay muted loop playsinline style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px;">
+        <source src="videos/web in knowledge base .mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2>Modern Website Development: What Your Business Needs</h2>
+      <p>
+        A website is more than just an online presence — it's your brand’s first impression. With users demanding faster, responsive...
+      </p>
+      <div class="extra-content">
+        <p>
+          Developers are focusing on mobile-first design, speed optimization, and smooth user experience. Technologies like React, Tailwind CSS, and headless CMS platforms are enabling custom, scalable solutions.
+        </p>
+        <p>
+          Integrating features like chatbots, e-commerce, and analytics is no longer optional. In 2025, a high-performing website can be your biggest sales engine.
+        </p>
+        <p>
+          Website performance metrics such as Core Web Vitals, accessibility scores, and progressive enhancement are now critical benchmarks for SEO and UX.
+        </p>
+        <p>
+          Businesses are also leveraging JAMstack architecture to decouple front-end and back-end systems, improving scalability and developer flexibility.
+        </p>
+      </div>
+      <span class="toggle-btn">Read More →</span>
+    </div>
+
+  </div>
+
+  <script>
+
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+    toggleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const extraContent = btn.previousElementSibling;
+        if (extraContent.style.display === 'block') {
+          extraContent.style.display = 'none';
+          btn.textContent = 'Read More →';
+        } else {
+          extraContent.style.display = 'block';
+          btn.textContent = 'Read Less ←';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

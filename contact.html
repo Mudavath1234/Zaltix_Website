@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Zaltix</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #2c1c4d;
+      color: #fff;
+    }
+
+   
+/* Contact Section */
+    .contact-section {
+      padding: 0 20px;
+      margin-top: -20px;
+    }
+
+    .contact-section h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .contact-section p {
+      text-align: center;
+      font-size: 20px;
+      margin-top: -30px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .contact-info {
+      font-size: 22px;
+      font-weight: 500;
+      color: white;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-info .info-item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .contact-info i {
+      font-size: 28px;
+      margin-right: 15px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+    }
+    
+.contact-info .info-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info .info-row .info-item {
+  margin: 0;
+}
+
+      
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  border-radius: 20px;
+  padding: 40px 35px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 14px 14px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #2c1c4d;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: transparent;
+}
+
+.contact-form .form-group label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #777;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.contact-form input:focus ~ label,
+.contact-form input:not(:placeholder-shown) ~ label,
+.contact-form textarea:focus ~ label,
+.contact-form textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #2c1c4d;
+  background-color: #f0f0f0;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #FFD700;
+  color: black;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #FFD700;
+}
+
+  </style>
+</head>
+<body>
+
+
+<!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Have questions or want to work with us? Get in touch!</p>
+
+       <!-- Contact Form Heading -->
+
+<form class="contact-form" action="process_contact.php" method="GET">
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <label>Your Name</label>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Your Email" required />
+    <label>Your Email</label>
+  </div>
+  <div class="form-group">
+    <input type="text" name="phonenumber" placeholder="Enter Your Mobile Number" required />
+    <label>Mobile Number</label>
+  </div>
+  <div class="form-group">
+    <textarea name="message" placeholder="Write a Message" rows="5" required></textarea>
+    <label>Your Message</label>
+  </div>
+  <button type="submit">Send Message</button>
+</form>
+
+    <div class="contact-info">
+  <div class="info-row">
+    <div class="info-item">
+      <i class="fas fa-phone" style="color: #00e676; font-size: 17px; margin-right: 10px; margin-top: 5px;" ></i>
+<span style="font-size: 17px; color: #fff;">+91 99666 53131</span>
+
+    </div>
+    <div class="info-item">
+      <i class="fas fa-envelope" style="color: #42a5f5;font-size: 17px"></i>
+      <a style="font-size: 17px" href="mailto:info@zaltixsoftsolutions.com">info@zaltixsoftsolutions.com</a>
+    </div>
+  </div>
+
+  <div class="info-item">
+    <i class="fas fa-map-marker-alt" style="color: #ef5350;font-size: 17px"></i>
+    <span style="font-size: 18px">Plot no: 69, Road number 3, Kothapet, Hyderabad, Telangana, India. 500035</span>
+  </div>
+</div>
+
+
+    <!-- Social Icons -->
+   <div class="social-icons" style="display: flex; gap: 10px;">
+  <a href="https://www.facebook.com/profile.php?id=61574726078708" target="_blank" 
+     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/zaltixsoftsolutions/" target="_blank" 
+     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/company/zaltix-soft-solutions-private-limited/" target="_blank" 
+     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://x.com/zaltixss" target="_blank" 
+     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="18" height="18" fill="white">
+      <path d="M716.6 475.6 1184 0H1079L665.8 437.5 336.4 0H0l490 672.6L0 1227h105L541 758.1l349.4 468.9H1200L716.6 475.6zM590.7 696.5 554.2 647 149.3 86.5h134.5l319.8 438 36.5 49.5 418.2 573.3H918.1L590.7 696.5z"/>
+    </svg>
+  </a>
+</div>
+
+
+
+    <div style="padding-bottom: 30px;"></div>
+  </section>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

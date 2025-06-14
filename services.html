@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zaltix Services</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2c1c4d;
+      color: #fff;
+    }
+
+    /* Services section */
+    .services {
+      padding: 50px 20px;
+    }
+
+    .services h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: white;
+      color: #2c1c4d;
+      /* padding: 50px; */
+      border-radius: 10px;
+      width: 300px;
+      height:300px;
+      font-weight: bold;
+      border-left: 5px solid #FFDC00;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      padding: 10px 50px 80px 50px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+      color: black;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .card a {
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+<body>
+
+<!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <!-- Services Section -->
+  <section class="services" id="services"style="margin-top:-60px;">
+    <h3>Cutting-Edge IT Solutions</h3>
+    <div class="cards" style="margin-top:-10px;">
+      <div class="card">
+        <h4>Cloud Services</h4>
+        <p>Cloud enables secure, scalable, remote access, collaboration, and storage.</p>
+        <img src="image logo/WhatsApp Image 2025-04-30 at 16.38.52_b565f2a1.jpg" alt="Cloud Services">
+        <div style="text-align: center;">
+          <a href="cloud-computing.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Digital Marketing</h4>
+        <p>Digital marketing boosts visibility, engagement, reach,and growth.</p>
+        <img src="image logo/Digital Marketing.jpg" alt="Digital Marketing">
+        <div style="text-align: center;">
+          <a href="digital-marketing.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Web & Mobile Development</h4>
+        <p>We build fast and user-friendly web and mobile applications tailored to your needs.</p>
+        <img src="image logo/web develop.jpg" alt="Web and Mobile App Development">
+        <div style="text-align: center;">
+          <a href="web-development.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Cybersecurity</h4>
+        <p>Protecting your data with advanced, end-to-end security solutions.</p>
+        <img src="image logo/Cyber security.jpg" alt="Cybersecurity">
+        <div style="text-align: center;">
+          <a href="cybersecurity.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Customized Software Solutions</h4>
+        <p>Tailored, flexible solutions built around your unique business goals.</p>
+        <img src="image logo/customized-software-solution.png" alt="App Development">
+        <div style="text-align: center;">
+          <a  href="mobile-app-development.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>AI/ML</h4>
+        <p>Automate, predict, and optimize with smart AI-driven insights.</p>
+        <img src="image logo/AI.jpg" alt="AI/ML">
+        <div style="text-align: center;">
+          <a href="aiml.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

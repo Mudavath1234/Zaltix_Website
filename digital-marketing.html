@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Marketing Services</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .service-hero {
+      background: #f3f0fa;
+      padding: 5px 20px;
+      text-align: center;
+    }
+
+    .service-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .service-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .service-content h2, h3 {
+      color: #6a0dad;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background: #2c1c4d;
+      color: white;
+      /* margin-top: 40px; */
+    }
+
+    .section-title {
+      color: #6a0dad;
+      margin-top: 30px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .section-content {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar.html -->
+   <div id="navbar"></div>
+  <main>
+    <section class="service-hero">
+      <h1>Digital Marketing Services</h1>
+      <p>Grow your business online with our expert digital marketing solutions.</p>
+    </section>
+
+    <section class="service-content" >
+      <img src="image logo/digital marketing serve.jpg" alt="Digital Marketing Illustration" />
+
+      <h2>Why Digital Marketing Is Important for Business Growth</h2>
+      <p>
+        In today’s fast-moving world, having a strong online presence is not just important — it’s necessary. 
+        Digital marketing helps businesses of all sizes grow faster by reaching the right customers at the right time. 
+        Whether you are a startup or an established company, investing in digital marketing can take your brand to the next level.
+      </p>
+
+      <p>At <strong>Zaltix Soft Solutions</strong>, we specialize in providing complete digital marketing services to help your business succeed.</p>
+
+      <h3 class="section-title " style="text-align: left;">Why Is Digital Marketing Important?</h3>
+      <div class="section-content">
+        <ul>
+          <li><strong>Reach a Wider Audience:</strong> Connect with customers across the city, country, and even the world.</li>
+          <li><strong>Cost-Effective Marketing:</strong> More affordable than traditional ads with better returns.</li>
+          <li><strong>Build Brand Awareness:</strong> SEO, social media, and ads help more people discover your brand.</li>
+          <li><strong>Target the Right People:</strong> Reach audiences based on interests, location, age, and behavior.</li>
+          <li><strong>Track Results Easily:</strong> Monitor and optimize your campaigns for better performance.</li>
+        </ul>
+      </div>
+
+      <h3 class="section-title" style="text-align: left;" >Our Digital Marketing Services</h3>
+      <div class="section-content">
+        <ul>
+          <li><strong>Search Engine Optimization (SEO):</strong> Rank higher on Google and get more organic traffic.</li>
+          <li><strong>Social Media Marketing:</strong> Build your brand and connect with users on Facebook, Instagram, LinkedIn, and more.</li>
+          <li><strong>Google Ads & Paid Campaigns:</strong> Reach new customers faster with strategic advertising.</li>
+          <li><strong>Content Marketing:</strong> Share blogs, videos, and posts that build trust and engagement.</li>
+          <li><strong>Website Development:</strong> Beautiful, user-friendly sites that convert visitors into leads.</li>
+        </ul>
+      </div>
+
+      <h3 class="section-title" style="text-align: left;">Why Choose Us?</h3>
+      <div class="section-content">
+        <ul>
+          <li>Experienced and passionate team</li>
+          <li>Custom strategies for your business</li>
+          <li>Transparent reporting and communication</li>
+          <li>Results-driven approach</li>
+        </ul>
+      </div>
+
+      <p><strong>Grow your business online with us!</strong></p>
+      <p>Get in touch today to find out how our digital marketing services can make a difference.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zaltix Soft Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

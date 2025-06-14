@@ -1,0 +1,129 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile App Development</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+
+    .service-hero {
+      background: #f3f0fa;
+      padding: 5px 20px;
+      text-align: center;
+    }
+
+    .service-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .service-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .service-content h2, h3 {
+      color: #6a0dad;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background: #2c1c4d;
+      color: white;
+      /* margin-top: 40px; */
+    }
+
+    .section-title {
+      color: #6a0dad;
+      margin-top: 30px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .section-content {
+      margin-top: 15px;
+    }
+
+    
+  </style>
+</head>
+<body>
+ <!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <main>
+    <section class="service-hero">
+      <h1 >Customized Software Solutions</h1>
+      <p>Build powerful mobile experiences for Android, iOS, and cross-platform users.</p>
+    </section>
+
+    <section class="service-content">
+      <img src="image logo/customized-software-solution.png" alt="Mobile App Development" />
+
+      <h2 style="text-align: left;">What is Customized Software Solutions?</h2>
+      <p>
+        Customized Software Solutions are tailor-made software applications developed specifically to meet the unique needs of a particular business or user, rather than using a one-size-fits-all product.
+      </p>
+
+      <h2 class="section-title" style="text-align: left;">Platforms We Support</h2>
+      <div class="section-content">
+        <ul>
+          <li><strong>Desktop Platforms:</strong> Software is developed for Windows, macOS, or Linux using technologies like Electron, .NET, or Java.</li>
+          <li><strong>Cloud Platforms:</strong>  Cloud-based solutions are hosted on AWS, Azure, or Google Cloud for scalable and remote access.</li>
+          <li><strong>Enterprise Platforms:</strong>  Tailored enterprise systems integrate with platforms like SAP, Oracle, or Microsoft Dynamics for large organizations.
+
+</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title" style="text-align: left;">Our Core Mobile Services</h2>
+      <div class="section-content">
+        <ul>
+          <li>UI/UX design for intuitive user experiences</li>
+          <li>Custom native and hybrid app development</li>
+          <li>Integration with cloud services and APIs</li>
+          <li>App performance optimization & testing</li>
+          <li>App store deployment & maintenance</li>
+          <li>Push notifications, GPS, camera, and offline support</li>
+        </ul>
+      </div>
+
+      <p><strong>Zaltix Soft Solutions builds mobile apps that drive results and user satisfaction across platforms.</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zaltix Soft Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

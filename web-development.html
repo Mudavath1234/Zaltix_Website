@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development</title>
+  <link rel="icon" href="image logo/favicon.jpg" type="image/png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    
+    .service-hero {
+      background: #f3f0fa;
+      padding: 5px 20px;
+      text-align: center;
+    }
+
+    .service-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .service-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .service-content h2, h3 {
+      color: #6a0dad;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background: #2c1c4d;
+      color: white;
+      /* margin-top: 40px; */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container.nav a img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      .container.nav {
+        padding: 0 1rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2c1c4d;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        border: 1px solid #FFDC00;
+        padding: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 2000;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+ <!-- navbar.html -->
+   <div id="navbar"></div>
+
+  <main>
+    <section class="service-hero">
+      <h1>Mobile & Web Development</h1>
+      <p>Create high-performance, scalable websites tailored to your business needs.</p>
+    </section>
+
+    <section class="service-content">
+      <img src="image logo/web development page.jpg" alt="Web Development" />
+      <h2 style="text-align: left;">What is Web & Mobile Development?</h2>
+      <p>
+        Web development is the process of building websites or web applications that users can access through browsers like Chrome, Firefox, or Safari.
+      </p>
+
+      <h3 style="text-align: left;">Key Components</h3>
+      <ul>
+        <li><strong>Frontend Development:</strong> Focuses on user interfaces using HTML, CSS, JavaScript, React, Angular, etc.</li>
+        <li><strong>Backend Development:</strong> Manages server logic, databases, and APIs using Node.js, PHP, Python, etc.</li>
+        <li><strong>Full-Stack:</strong> Combines frontend and backend skills to develop complete web applications.</li>
+        <li><strong>Native Mobile Development:</strong> Creates platform-specific apps using Java/Kotlin for Android and Swift for iOS.</li>
+        <li><strong>Cross-Platform Mobile Development:</strong> Develops apps for both Android and iOS using one codebase (e.g., React Native, Flutter).</li>
+        <li><strong>Progressive Web Apps (PWA):</strong> Web applications that behave like mobile apps with offline access and installability.</li>
+      </ul>
+
+      <h3 style="text-align: left;">Our Expertise</h3>
+      <ul>
+        <li>Responsive and mobile-first design</li>
+        <li>Custom content management systems (CMS)</li>
+        <li>E-commerce and payment integration</li>
+        <li>API development and third-party integrations</li>
+        <li>Performance optimization & SEO-friendly code</li>
+      </ul>
+
+      <p><strong>Choose Zaltix Soft Solutions to bring your ideas to life with innovative and effective web development.</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zaltix Soft Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
