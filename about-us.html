@@ -16,10 +16,11 @@
 
     /* About Us content styling */
     .about-container {
-      padding: -50px 50px 20px;
+      padding: 40px 20px;
       max-width: 1200px;
       margin: auto;
     }
+    
     .about-container h1 {
       text-align: center;
       font-size: 36px;
@@ -30,7 +31,7 @@
       text-align: center;
       font-size: 18px;
       margin-bottom: 40px;
-      margin-top:-10px;
+      margin-top: -10px;
     }
 
     .about-box {
@@ -39,15 +40,14 @@
       padding: 40px 30px;
       border-radius: 20px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      margin-top: -15px;
-      padding-bottom: 10px;
+      margin-top: 20px;
+      padding-bottom: 30px;
     }
 
     .about-box img {
       width: 100%;
-  
       border-radius: 20px;
-      margin: -10px auto 10px auto;
+      margin: 10px auto 20px auto;
       display: block;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
@@ -56,7 +56,7 @@
       font-size: 22px;
       color: #1a237e;
       margin-top: 30px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .about-box p,
@@ -76,7 +76,12 @@
 
     .cta {
       text-align: center;
-      padding-bottom: 20px;
+      padding: 30px 0;
+    }
+
+    .cta h2 {
+      color: #fff;
+      margin-bottom: 20px;
     }
 
     .cta a {
@@ -87,16 +92,82 @@
       font-weight: bold;
       text-decoration: none;
       transition: background-color 0.3s;
+      display: inline-block;
     }
 
     .cta a:hover {
       background-color: #e6c800;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-container {
+        padding: 30px 15px;
+      }
+      
+      .about-container h1 {
+        font-size: 28px;
+      }
+      
+      .about-container .tagline {
+        font-size: 16px;
+      }
+      
+      .about-box {
+        padding: 30px 20px;
+        margin-top: 15px;
+      }
+      
+      .about-box h2 {
+        font-size: 20px;
+      }
+      
+      .about-box p,
+      .about-box ul {
+        font-size: 15px;
+      }
+      
+      .cta {
+        padding: 20px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-container {
+        padding: 20px 10px;
+      }
+      
+      .about-container h1 {
+        font-size: 24px;
+      }
+      
+      .about-container .tagline {
+        font-size: 14px;
+      }
+      
+      .about-box {
+        padding: 25px 15px;
+      }
+      
+      .about-box h2 {
+        font-size: 18px;
+      }
+      
+      .about-box p,
+      .about-box ul {
+        font-size: 14px;
+      }
+      
+      .cta a {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
-<!-- navbar.html -->
-   <div id="navbar"></div>
+  <!-- navbar.html -->
+  <div id="navbar"></div>
 
   <main class="about-container">
     <h1>Get to Know Us</h1>
@@ -111,7 +182,7 @@
       <h2>Our Core Values</h2>
       <ul>
         <li><strong>Innovation:</strong> We challenge norms and embrace new technologies.</li>
-        <li><strong>Integrity:</strong> We do what’s right, not what’s easy.</li>
+        <li><strong>Integrity:</strong> We do what's right, not what's easy.</li>
         <li><strong>Collaboration:</strong> We work as one team with our clients.</li>
         <li><strong>Excellence:</strong> We pursue quality in every pixel and every line of code.</li>
       </ul>
@@ -135,9 +206,9 @@
       <p>Our mission is to empower businesses through smart, future-ready technology. Our vision is to be a global leader in delivering software excellence, transforming industries and lives.</p>
     </div>
 
-    <div class="cta" style="padding-top:-8px ;">
-      <h2 >Let’s Build Something Great Together</h2>
-      <a href="contact.html" >Get in Touch</a>
+    <div class="cta">
+      <h2>Let's Build Something Great Together</h2>
+      <a href="contact.html">Get in Touch</a>
     </div>
   </main>
 
@@ -154,6 +225,5 @@
       navLinks.classList.toggle('active');
     }
   </script>
-
 </body>
 </html>

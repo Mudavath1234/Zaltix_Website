@@ -14,11 +14,13 @@
       color: #fff;
     }
 
-   
-/* Contact Section */
+    /* Contact Section */
     .contact-section {
-      padding: 0 20px;
+      padding: 40px 20px;
       margin-top: -20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .contact-section h3 {
@@ -28,16 +30,16 @@
       color: white;
     }
 
-    .contact-section p {
+    .contact-section > p {
       text-align: center;
       font-size: 20px;
       margin-top: -30px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       color: white;
     }
 
     .contact-info {
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 500;
       color: white;
       text-align: center;
@@ -50,39 +52,42 @@
       align-items: center;
       justify-content: center;
       margin-top: 20px;
+      flex-wrap: wrap;
     }
 
     .contact-info i {
-      font-size: 28px;
+      font-size: 20px;
       margin-right: 15px;
+      flex-shrink: 0;
     }
 
     .contact-info a {
       text-decoration: none;
       color: white;
-      font-size: 22px;
+      font-size: 18px;
     }
     
-.contact-info .info-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+    .contact-info .info-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-.contact-info .info-row .info-item {
-  margin: 0;
-}
+    .contact-info .info-row .info-item {
+      margin: 0;
+      min-width: 200px;
+    }
 
-      
     .social-icons {
       display: flex;
       justify-content: center;
       gap: 15px;
-      margin-top: 10px;
+      margin-top: 30px;
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     .social-icons a {
@@ -92,9 +97,12 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      font-size: 24px;
+      font-size: 20px;
       text-decoration: none;
       transition: transform 0.3s;
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
     }
 
     .social-icons a:hover {
@@ -102,165 +110,232 @@
     }
 
     .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: linear-gradient(145deg, #f0f0f0, #ffffff);
-  border-radius: 20px;
-  padding: 40px 35px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  color: #000;
-  position: relative;
-  overflow: hidden;
-}
+      max-width: 600px;
+      margin: 40px auto 0;
+      background: linear-gradient(145deg, #f0f0f0, #ffffff);
+      border-radius: 20px;
+      padding: 40px 35px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      color: #000;
+      position: relative;
+      overflow: hidden;
+    }
 
-.contact-form .form-group {
-  position: relative;
-  margin-bottom: 25px;
-}
+    .contact-form .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 14px 14px 14px 10px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  background: transparent;
-  font-size: 16px;
-  color: #000;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px 14px 14px 10px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      font-size: 16px;
+      color: #000;
+      outline: none;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+    }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-bottom-color: #2c1c4d;
-}
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-bottom-color: #2c1c4d;
+    }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: transparent;
-}
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: transparent;
+    }
 
-.contact-form .form-group label {
-  position: absolute;
-  top: 14px;
-  left: 10px;
-  color: #777;
-  font-size: 16px;
-  pointer-events: none;
-  transition: 0.2s ease all;
-}
+    .contact-form .form-group label {
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      color: #777;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.2s ease all;
+    }
 
-.contact-form input:focus ~ label,
-.contact-form input:not(:placeholder-shown) ~ label,
-.contact-form textarea:focus ~ label,
-.contact-form textarea:not(:placeholder-shown) ~ label {
-  top: -10px;
-  font-size: 13px;
-  color: #2c1c4d;
-  background-color: #f0f0f0;
-  padding: 0 5px;
-  border-radius: 3px;
-}
+    .contact-form input:focus ~ label,
+    .contact-form input:not(:placeholder-shown) ~ label,
+    .contact-form textarea:focus ~ label,
+    .contact-form textarea:not(:placeholder-shown) ~ label {
+      top: -10px;
+      font-size: 13px;
+      color: #2c1c4d;
+      background-color: #f0f0f0;
+      padding: 0 5px;
+      border-radius: 3px;
+    }
 
-.contact-form button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  background: #FFD700;
-  color: black;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      background: #FFD700;
+      color: black;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-.contact-form button:hover {
-  background: #FFD700;
-}
+    .contact-form button:hover {
+      background: #FFC300;
+    }
 
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-section {
+        padding: 30px 15px;
+      }
+      
+      .contact-section h3 {
+        font-size: 28px;
+      }
+      
+      .contact-section > p {
+        font-size: 18px;
+      }
+      
+      .contact-info {
+        font-size: 16px;
+      }
+      
+      .contact-info .info-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .contact-info .info-item {
+        flex-direction: column;
+        text-align: center;
+        min-width: auto;
+      }
+      
+      .contact-info i {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+      
+      .contact-form {
+        margin: 30px 15px 0;
+        padding: 30px 25px;
+      }
+      
+      .social-icons {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-section h3 {
+        font-size: 24px;
+      }
+      
+      .contact-section > p {
+        font-size: 16px;
+      }
+      
+      .contact-info {
+        font-size: 14px;
+      }
+      
+      .contact-info a {
+        font-size: 14px;
+      }
+      
+      .contact-form {
+        padding: 25px 20px;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 14px;
+      }
+      
+      .contact-form button {
+        font-size: 16px;
+        padding: 12px;
+      }
+      
+      .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 <body>
-
-
-<!-- navbar.html -->
-   <div id="navbar"></div>
+  <!-- navbar.html -->
+  <div id="navbar"></div>
 
   <!-- Contact Section -->
   <section class="contact-section" id="contact">
     <h3>Contact Us</h3>
     <p>Have questions or want to work with us? Get in touch!</p>
 
-       <!-- Contact Form Heading -->
-
-<form class="contact-form" action="process_contact.php" method="GET">
-  <div class="form-group">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <label>Your Name</label>
-  </div>
-  <div class="form-group">
-    <input type="email" name="email" placeholder="Your Email" required />
-    <label>Your Email</label>
-  </div>
-  <div class="form-group">
-    <input type="text" name="phonenumber" placeholder="Enter Your Mobile Number" required />
-    <label>Mobile Number</label>
-  </div>
-  <div class="form-group">
-    <textarea name="message" placeholder="Write a Message" rows="5" required></textarea>
-    <label>Your Message</label>
-  </div>
-  <button type="submit">Send Message</button>
-</form>
+    <form class="contact-form" action="process_contact.php" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <label>Your Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required />
+        <label>Your Email</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="phonenumber" placeholder="Enter Your Mobile Number" required />
+        <label>Mobile Number</label>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Write a Message" rows="5" required></textarea>
+        <label>Your Message</label>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
 
     <div class="contact-info">
-  <div class="info-row">
-    <div class="info-item">
-      <i class="fas fa-phone" style="color: #00e676; font-size: 17px; margin-right: 10px; margin-top: 5px;" ></i>
-<span style="font-size: 17px; color: #fff;">+91 99666 53131</span>
+      <div class="info-row">
+        <div class="info-item">
+          <i class="fas fa-phone" style="color: #00e676;"></i>
+          <span>+91 99666 53131</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope" style="color: #42a5f5;"></i>
+          <a href="mailto:info@zaltixsoftsolutions.com">info@zaltixsoftsolutions.com</a>
+        </div>
+      </div>
 
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt" style="color: #ef5350;"></i>
+        <span>Plot no: 69, Road number 3, Kothapet, Hyderabad, Telangana, India. 500035</span>
+      </div>
     </div>
-    <div class="info-item">
-      <i class="fas fa-envelope" style="color: #42a5f5;font-size: 17px"></i>
-      <a style="font-size: 17px" href="mailto:info@zaltixsoftsolutions.com">info@zaltixsoftsolutions.com</a>
-    </div>
-  </div>
-
-  <div class="info-item">
-    <i class="fas fa-map-marker-alt" style="color: #ef5350;font-size: 17px"></i>
-    <span style="font-size: 18px">Plot no: 69, Road number 3, Kothapet, Hyderabad, Telangana, India. 500035</span>
-  </div>
-</div>
-
 
     <!-- Social Icons -->
-   <div class="social-icons" style="display: flex; gap: 10px;">
-  <a href="https://www.facebook.com/profile.php?id=61574726078708" target="_blank" 
-     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-
-  <a href="https://www.instagram.com/zaltixsoftsolutions/" target="_blank" 
-     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/company/zaltix-soft-solutions-private-limited/" target="_blank" 
-     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-
-  <a href="https://x.com/zaltixss" target="_blank" 
-     style="background-color: #555; color: #fff; padding: 10px; border-radius: 66px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="18" height="18" fill="white">
-      <path d="M716.6 475.6 1184 0H1079L665.8 437.5 336.4 0H0l490 672.6L0 1227h105L541 758.1l349.4 468.9H1200L716.6 475.6zM590.7 696.5 554.2 647 149.3 86.5h134.5l319.8 438 36.5 49.5 418.2 573.3H918.1L590.7 696.5z"/>
-    </svg>
-  </a>
-</div>
-
-
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61574726078708" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/zaltixsoftsolutions/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/zaltix-soft-solutions-private-limited/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://x.com/zaltixss" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="18" height="18" fill="white">
+          <path d="M716.6 475.6 1184 0H1079L665.8 437.5 336.4 0H0l490 672.6L0 1227h105L541 758.1l349.4 468.9H1200L716.6 475.6zM590.7 696.5 554.2 647 149.3 86.5h134.5l319.8 438 36.5 49.5 418.2 573.3H918.1L590.7 696.5z"/>
+        </svg>
+      </a>
+    </div>
 
     <div style="padding-bottom: 30px;"></div>
   </section>
@@ -272,7 +347,6 @@
         document.getElementById('navbar').innerHTML = data;
       })
       .catch(error => console.error('Error loading navbar:', error));
-
 
     function toggleMenu() {
       const navLinks = document.querySelector('.nav-links');

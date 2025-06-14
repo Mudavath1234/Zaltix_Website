@@ -19,7 +19,6 @@
       color: white;
     }
 
-   
     /* Careers content styles */
     .careers-hero {
       text-align: center;
@@ -36,19 +35,18 @@
       font-size: 1.2em;
       max-width: 600px;
       margin: auto;
-      
     }
 
     .open-positions {
-      padding: -200px  20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
-      margin-top:-50px;
+      margin-top: -50px;
     }
 
     .open-positions h2 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 2em;
     }
 
@@ -65,10 +63,16 @@
     .job-card h3 {
       margin-top: 0;
       color: #007BFF;
+      margin-bottom: 15px;
     }
 
     .job-card ul {
       padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .job-card li {
+      margin-bottom: 8px;
     }
 
     .job-card button {
@@ -80,6 +84,7 @@
       border-radius: 5px;
       font-size: 1em;
       margin-top: 10px;
+      transition: background 0.3s;
     }
 
     .job-card button:hover {
@@ -89,12 +94,13 @@
     .careers-cta {
       background: #eee;
       text-align: center;
-      padding: 10px 20px;
+      padding: 40px 20px;
       font-size: 1.2em;
     }
 
     .careers-cta h2 {
       color: #2c1c4d;
+      margin-bottom: 15px;
     }
 
     .careers-cta p {
@@ -111,21 +117,81 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-      .careers-hero h1 {
-        font-size: 2em;
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .careers-hero {
+        padding: 60px 15px;
+        margin-top: -50px;
       }
+      
+      .careers-hero h1 {
+        font-size: 2.2em;
+      }
+      
+      .careers-hero p {
+        font-size: 1.1em;
+      }
+      
+      .open-positions {
+        padding: 30px 15px;
+        margin-top: -30px;
+      }
+      
+      .open-positions h2 {
+        font-size: 1.8em;
+      }
+      
+      .job-card {
+        padding: 20px;
+        margin: 15px 0;
+      }
+      
+      .careers-cta {
+        padding: 30px 15px;
+        font-size: 1.1em;
+      }
+    }
 
+    @media (max-width: 480px) {
+      .careers-hero h1 {
+        font-size: 1.8em;
+      }
+      
+      .careers-hero p {
+        font-size: 1em;
+      }
+      
       .open-positions h2 {
         font-size: 1.5em;
+      }
+      
+      .job-card {
+        padding: 15px;
+      }
+      
+      .job-card h3 {
+        font-size: 1.2em;
+      }
+      
+      .job-card ul {
+        font-size: 14px;
+      }
+      
+      .job-card button {
+        width: 100%;
+        padding: 12px;
+      }
+      
+      .careers-cta {
+        font-size: 1em;
       }
     }
   </style>
 </head>
 <body>
-
   <!-- navbar.html -->
-   <div id="navbar"></div>
+  <div id="navbar"></div>
+  
   <!-- Hero Section -->
   <section class="careers-hero">
     <h1>Join Our Team at Zaltix Soft Solutions</h1>
@@ -206,8 +272,8 @@
 
   <!-- CTA Section -->
   <section class="careers-cta">
-    <h2>Can’t find your role?</h2>
-    <p>We’re always looking for talented people. Send your resume to <a href="mailto:hr@zaltixsoftsolutions.com">hr@zaltixsoftsolutions.com</a></p>
+    <h2>Can't find your role?</h2>
+    <p>We're always looking for talented people. Send your resume to <a href="mailto:hr@zaltixsoftsolutions.com">hr@zaltixsoftsolutions.com</a></p>
   </section>
 
   <!-- Hamburger Script -->
@@ -218,10 +284,10 @@
         document.getElementById('navbar').innerHTML = data;
       })
       .catch(error => console.error('Error loading navbar:', error));
+      
     function toggleMenu() {
       document.querySelector('.nav-links').classList.toggle('active');
     }
   </script>
-
 </body>
 </html>
